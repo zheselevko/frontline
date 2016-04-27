@@ -1,6 +1,3 @@
-Gulp Boilerplate for generic CSS/HTML/JS development
-=============
-<a href="http://riverco.de" target="_blank">riverco.de</a> gulp boilerplate.
 
 Structure
 =============
@@ -33,18 +30,6 @@ We are also using simplest include system with `gulp-rigger`, works for javascrp
 //= partials/partial.html
 ```
 
-Naming
+After compilation deploy build folder to remote server gulp-util and vinyl-ftp 
 =============
-We use BEM naming, meaning `.block` for independent block. `.block__element` for elements inside that block. And `.block_modification` for modification of the block.
 
-It's noce to name layout blocks with `.l-*` prefixes. So you know it's layout.
-
-States of the blocks use prefix `.is-*`. `.is-running`, `.is-hidden`, `.is-open`.
-
-For javascript hooks we use prefix `.js-*`.
-
-You are welcome
-=============
-Have fun using it, or borrowing some parts. In case of issues or ideas just create them on github. Or write us at <a href="mailto:html@coderiver.com.ua">html@coderiver.com.ua</a>.
-
-gl & hf.
