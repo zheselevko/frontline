@@ -2359,6 +2359,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; backgr
 .header .box__nav:after { content: " "; display: table; clear: both; }
 .header .box__nav .row { margin-bottom: 0; padding: 10px 0 8px 0; }
 .header .box__nav .row .col.l2 { width: 20%; }
+.header .box__nav .row .col.l2 .valign-wrapper { height: 65px; }
+.header .box__nav .row .col.l2 .valign-wrapper .center-align { width: 100%; }
+.header .box__nav .row .col.l2 .valign-wrapper .center-align a { display: inline-block; background: url("../img/btn-bg.png") 0 0 no-repeat; text-shadow: 1px 1.7px 1px rgba(0, 0, 0, 0.3); color: white; font-family: Helvetica-Bold; font-size: 20px; font-weight: 700; line-height: 1; padding: 13px 19px; }
 .header .box__nav .row .col.l8 { width: 60%; }
 .header .box__nav .row .col.l8 nav { background-color: transparent; -webkit-box-shadow: none; box-shadow: none; }
 .header .box__nav .row .col.l8 nav ul a { color: white; font-family: Helvetica-Bold; font-size: 20px; font-weight: 700; padding: 0 13px; }
