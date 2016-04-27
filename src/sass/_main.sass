@@ -1,0 +1,178 @@
+$helb: Helvetica-Bold
+$helr: Helvetica-Regular
+$hell: Helvetica-Light
+.out
+	width: 100%
+	flex: 1 0 auto
+.header
+	+box
+	+clr
+	.top__box_header
+		width: 100%
+		background: #f0f0f0
+		+box
+		+clr
+		.container
+			padding: 6px 0
+			.row
+				margin-bottom: 0
+				.col.l2
+					width: 20%
+				.col.l8
+					width: 60%
+				.top_nav
+					margin: 0
+					+box
+					+clr
+					li
+						float: left
+						a
+							padding: 0 10px
+							color: #2e2e2e
+							font-family: $helr
+							font-size: 14px
+							font-weight: 400
+							line-height: 1
+							&:hover
+								text-decoration: underline
+				.slogan
+					color: #2e2e2e
+					font-family: $helb
+					font-size: 14px
+					font-weight: 700
+					line-height: 1
+				.right
+					margin: 0
+					li
+						height: 18px
+						float: left
+						a
+							color: #595959
+							font-size: 18px
+							line-height: 1
+							height: 18px
+							padding: 0 10px
+							.material-icons
+								font-size: 18px
+								line-height: 1
+								height: 18px
+	.box__nav
+		width: 100%
+		+box
+		+clr
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
+		background: #414141
+		.row
+			margin-bottom: 0
+			padding: 10px 0 8px 0
+			.col.l2
+				width: 20%
+			.col.l8
+				width: 60%
+				nav
+					background-color: transparent
+					box-shadow: none
+					ul
+						a
+							color: white
+							font-family: $helb
+							font-size: 20px
+							font-weight: 700
+							padding: 0 13px
+							&:hover
+								background-color: transparent
+								text-decoration: underline			
+
+.response
+	width: 100%
+	+box
+	+clr
+	background: #f29e0e
+	.container
+		padding: 36px 0
+		.row
+			margin-bottom: 0
+			.info
+				text-shadow: 1px 1.7px 1px rgba(0, 0, 0, 0.3)
+				color: white
+				font-family: $helb
+				font-size: 24px
+				font-weight: 700
+				text-transform: uppercase
+				line-height: 2.8rem
+			.col.l5
+				width: 38%
+			.valign-wrapper
+				height: 40px
+				.center-align
+					width: 100%
+					input
+						margin: 0
+						height: 32px
+						box-shadow: 0 0 5.9px 0.1px rgba(0, 0, 0, 0.28)
+						background: #fff
+						padding: 0 20px
+						border-bottom: none
+						width: 280px
+				.left-align
+					position: relative
+					button
+						border: none
+						padding: 0
+						margin: 0
+						background: none
+						text-shadow: 1px 1.7px 1px rgba(0, 0, 0, 0.3)
+						color: white
+						font-family: $helb
+						font-size: 24px
+						font-weight: 700
+						text-transform: uppercase
+						line-height: 2.8rem
+						padding-left: 45px
+						position: relative
+						&:before
+							content: ''
+							position: absolute
+							left: 0
+							top: 50%
+							margin-top: -16px
+							width: 32px
+							height: 33px
+							background: url("../img/arr-response.png") 0 0 no-repeat
+
+footer.page-footer 
+	background-color: #414141
+	margin-top: 0
+	.top-footer
+		h5.white-text
+			color: white
+			font-family: $helr
+			font-size: 20px
+			font-weight: 400
+			text-transform: uppercase
+		ul
+			+box
+			+clr
+			li
+				a
+					font-family: $hell
+					font-size: 16px
+					font-weight: 300
+					line-height: 28px
+					color: #fff		
+		.logo-footer
+			margin-bottom: 40px
+	.footer-copyright
+		background-color: #414141
+		border-top: 2px solid #9a9a9a
+		.copy
+			color: white
+			font-family: $helb
+			font-size: 16px
+			font-weight: 700
+		.left
+			text-transform: uppercase
+			font-family: $helb
+			font-size: 16px
+			font-weight: 700
+			color: #fff
