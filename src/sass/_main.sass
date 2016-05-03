@@ -95,7 +95,60 @@ $hell: Helvetica-Light
 							padding: 0 13px
 							&:hover
 								background-color: transparent
-								text-decoration: underline			
+								text-decoration: underline
+.content
+	width: 100%
+	+box
+	+clr
+	.container
+		padding: 20px 0 0 0
+.blog
+	width: 100%
+	+box
+	+clr
+	.box
+		+box
+		+clr
+		.name
+			a
+				color: #2e2e2e
+				font-family: $helb
+				font-size: 18px
+				font-weight: 700		
+.news
+	width: 100%
+	+box
+	+clr
+	.container
+		border-bottom: 2px solid #d8d8d8
+		border-top: 2px solid #d8d8d8
+		margin-bottom: 20px
+		padding-top: 20px
+	.row
+		margin-bottom: 0
+	.l4
+		margin-bottom: 20px
+	.box
+		width: 400px
+		margin: 0 auto
+	.valign-wrapper
+		width: 100%
+		background: rgba(30,30,30, 0.46)
+		height: 80px
+		padding: 0 90px 0 20px
+		position: relative
+		margin-top: -83px
+		a
+			text-shadow: 1px 1.7px 1px rgba(0, 0, 0, 0.3)
+			color: white
+			font-family: $helb
+			font-size: 18px
+			font-weight: 700
+	.text
+		color: #2e2e2e
+		font-family: $hell
+		font-size: 16px
+		font-weight: 300
 .partners
 	width: 100%
 	+box
