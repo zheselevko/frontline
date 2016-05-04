@@ -102,6 +102,134 @@ $hell: Helvetica-Light
 	+clr
 	.container
 		padding: 20px 0 0 0
+		.collapsible
+			border: none
+			box-shadow: none
+			width: 400px
+			.collapsible-body
+				border-bottom: none
+				.valign-wrapper
+					width: 100%
+					background: rgba(30,30,30, 0.46)
+					height: 80px
+					padding: 0 90px 0 20px
+					position: relative
+					margin-top: -83px
+					a
+						text-shadow: 1px 1.7px 1px rgba(0, 0, 0, 0.3)
+						color: white
+						font-family: $helb
+						font-size: 18px
+						font-weight: 700
+			.collapsible-header.active
+				border-bottom: none
+				&:before
+					background: url("../img/arr-t.png") 0 0 no-repeat
+			.collapsible-header
+				position: relative
+				color: #2f2f2f
+				font-family: $helb
+				font-size: 18px
+				font-weight: 700
+				padding: 0
+				&:before
+					content: ''
+					position: absolute
+					right: 10px
+					top: 50%
+					margin-top: -3px
+					width: 11px
+					height: 7px
+					background: url("../img/arr-c.png") 0 0 no-repeat
+		.map
+			p
+				color: #2e2e2e
+				font-family: $hell
+				font-size: 16px
+				b
+					text-transform: uppercase
+					font-family: $helb
+			ul
+				li
+					color: #434343
+					font-family: $helb
+					font-size: 16px
+					font-weight: 700
+					padding-left: 30px
+					position: relative
+					line-height: 1.8rem
+					&:before
+						content: ''
+						position: absolute
+						left: 0
+						top: 50%
+						margin-top: -8px
+						width: 18px
+						height: 18px
+						border-radius: 50%
+					&:nth-child(1)
+						&:before
+							background: #f29e0e
+					&:nth-child(2)
+						&:before
+							background: #adadad
+					&:nth-child(3)
+						&:before
+							background: #393938
+		.scroll-pane
+			height: 585px
+			overflow: auto
+			width: 400px
+			li
+				&:nth-child(2n+1)
+					border-top: 1px solid #d8d8d8
+					border-bottom: 1px solid #d8d8d8
+				.row
+					margin-bottom: 0
+					padding: 8px 0
+					.name
+						padding: 10px 0
+						a
+							color: #2e2e2e
+							font-family: $helb
+							font-size: 17px
+							line-height: 1.2rem
+							font-weight: 700
+					.row
+						padding: 0
+					.date
+						position: relative
+						padding-left: 20px
+						color: #5e5e5e
+						font-family: $hell
+						font-size: 14px
+						font-weight: 300
+						&:before
+							content: ''
+							position: absolute
+							left: 0
+							top: 50%
+							margin-top: -6px
+							width: 13px
+							height: 13px
+							background: url("../img/clock.png") 0 0 no-repeat
+					.place
+						position: relative
+						padding-left: 17px
+						color: #5e5e5e
+						font-family: $hell
+						font-size: 14px
+						font-weight: 300
+						&:before
+							content: ''
+							position: absolute
+							left: 0
+							top: 50%
+							margin-top: -7px
+							width: 10px
+							height: 14px
+							background: url("../img/place.png") 0 0 no-repeat
+
 .blog
 	width: 100%
 	+box
@@ -128,6 +256,7 @@ $hell: Helvetica-Light
 		margin-bottom: 0
 	.l4
 		margin-bottom: 20px
+		+clr
 	.box
 		width: 400px
 		margin: 0 auto
@@ -322,3 +451,85 @@ footer.page-footer
 			font-size: 16px
 			font-weight: 700
 			color: #fff
+.jspContainer
+	overflow: hidden
+	position: relative
+
+.jspPane
+	position: absolute
+
+.jspVerticalBar
+	position: absolute
+	top: 0
+	right: 0
+	width: 6px
+	height: 100%
+	background: #d8d8d8
+.jspHorizontalBar
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 16px
+	background: red
+.jspCap
+	display: none
+
+.jspHorizontalBar 
+	.jspCap
+		float: left
+
+.jspTrack
+	background: #d8d8d8
+	position: relative
+.jspDrag
+	background: #f29e0e
+	position: relative
+	top: 0
+	left: 0
+	cursor: pointer
+
+.jspHorizontalBar 
+	.jspTrack
+		float: left
+		height: 100%
+.jspHorizontalBar 
+	.jspDrag
+		float: left
+		height: 100%
+
+.jspArrow
+	background: #50506d
+	text-indent: -20000px
+	display: block
+	cursor: pointer
+	padding: 0
+	margin: 0
+
+.jspArrow.jspDisabled
+	cursor: default
+	background: #80808d
+
+.jspVerticalBar 
+	.jspArrow
+		height: 16px
+
+.jspHorizontalBar 
+	.jspArrow
+		width: 16px
+		float: left
+		height: 100%
+
+.jspVerticalBar 
+	.jspArrow
+		&:focus
+			outline: none
+
+.jspCorner
+	background: #eeeef4
+	float: left
+	height: 100%
+.w40
+	width: 400px
+	.h3
+		margin-bottom: 20px
